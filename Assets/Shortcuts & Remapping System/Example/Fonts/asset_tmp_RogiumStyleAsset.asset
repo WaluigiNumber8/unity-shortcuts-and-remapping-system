@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2114bdc8544297b417dfefe9f1e410, type: 3}
+  m_Name: asset_tmp_RogiumStyleAsset
+  m_EditorClassIdentifier: 
+  m_StyleList:
+  - m_Name: Normal
+    m_HashCode: -1183493901
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
+  - m_Name: Important
+    m_HashCode: 371327558
+    m_OpeningDefinition: <#E32121>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000230000004500000033000000320000003100000032000000310000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: StartingPoint
+    m_HashCode: 1315658732
+    m_OpeningDefinition: <sprite=0><#E32121>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c0000007300000070000000720000006900000074000000650000003d000000300000003e0000003c000000230000004500000033000000320000003100000032000000310000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: ExitGate
+    m_HashCode: -11000393
+    m_OpeningDefinition: <sprite=1><#C6EF22>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c0000007300000070000000720000006900000074000000650000003d000000310000003e0000003c000000230000004300000036000000450000004600000032000000320000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: CardAmount
+    m_HashCode: 1191383032
+    m_OpeningDefinition: <sprite=4><#E32121>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c0000007300000070000000720000006900000074000000650000003d000000340000003e0000003c000000230000004500000033000000320000003100000032000000310000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000

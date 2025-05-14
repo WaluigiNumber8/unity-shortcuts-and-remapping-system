@@ -1,0 +1,17 @@
+{
+    "name": "RedRats.UndoRedoSystem.Examples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:acdfe8f28ad0fc242899bdbe6ed001d3",
+        "GUID:7a49007527f521a46acfd3f53ad5d30f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
