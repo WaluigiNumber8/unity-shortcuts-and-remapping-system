@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using RedRats.Core;
+using RedRats.ShortcutSystem.Input;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace RedRats.UI.Properties
 {
@@ -17,8 +19,9 @@ namespace RedRats.UI.Properties
         [SerializeField] private IPDropdown dropdownProperty;
         [SerializeField] private IPToggle toggleProperty;
         [SerializeField] private IPSlider sliderProperty;
+        [SerializeField] private IPInputBinding inputBindingProperty;
         
-        [Header("Other")]
+        [Header("Other")] 
         [SerializeField] private Transform poolParent;
 
         private UIPropertyPool<IPHeader> headerPool;
@@ -26,6 +29,7 @@ namespace RedRats.UI.Properties
         private UIPropertyPool<IPDropdown> dropdownPool;
         private UIPropertyPool<IPToggle> togglePool;
         private UIPropertyPool<IPSlider> sliderPool;
+        private UIPropertyPool<IPInputBinding> inputBindingPool;
         
         private UIPropertyPool<IPContentBlock> contentBlockHorizontalPool, contentBlockVerticalPool, contentBlockColumn2Pool;
 
@@ -37,6 +41,7 @@ namespace RedRats.UI.Properties
             dropdownPool = new UIPropertyPool<IPDropdown>(dropdownProperty, poolParent, 50, 150);
             togglePool = new UIPropertyPool<IPToggle>(toggleProperty, poolParent, 50, 150);
             sliderPool = new UIPropertyPool<IPSlider>(sliderProperty, poolParent, 50, 150);
+            inputBindingPool = new UIPropertyPool<IPInputBinding>(inputBindingProperty, poolParent, 50, 150);
         }
 
         #region Properties
@@ -147,65 +152,55 @@ namespace RedRats.UI.Properties
             slider.SetDisabled(isDisabled);
         }
 
+        /// <summary>
+        /// Builds the Input Binding property.
+        /// </summary>
+        /// <param name="action">The input action the binding is assigned to.</param>
+        /// <param name="device">To which device is the property limited to.</param>
+        /// <param name="parent">The parent under which to instantiate the property.</param>
+        /// <param name="useAlt">The action can have an alternative input.</param>
+        /// <param name="isDisabled">Initialize the property as a non-interactable</param>
+        public void BuildInputBinding(InputAction action, InputDeviceType device, Transform parent, bool useAlt = true, bool isDisabled = false)
+        {
+            int bindingIndex = InputSystemUtils.GetBindingIndexByDevice(action, device);
+            int bindingIndexAlt = useAlt ? InputSystemUtils.GetBindingIndexByDevice(action, device, true) : -1;
+            
+            //If action is composite, spawn for each binding
+            if (action.bindings[bindingIndex].isPartOfComposite)
+            {
+                //If is a modifier composite, spawn only one
+                if (action.bindings[bindingIndex - 1].IsTwoOptionalModifiersComposite())
+                {
+                    ConstructInputBinding(action.name, true);
+                    return;
+                }
+                //Any other type spawn for each binding
+                while (bindingIndex < action.bindings.Count && action.bindings[bindingIndex].isPartOfComposite)
+                {
+                    string title = $"{action.name}{action.bindings[bindingIndex].name.Capitalize()}";
+                    ConstructInputBinding(title);
+                    bindingIndex++;
+                    bindingIndexAlt++;
+                }
+                return;
+            }
+            ConstructInputBinding(action.name);
+            
+            void ConstructInputBinding(string title, bool useModifiers = false)
+            {
+                IPInputBinding inputBinding = inputBindingPool.Get(parent);
+                inputBinding.name = $"{title} InputBinding";
+                inputBinding.Construct(title, action, 
+                                       (useModifiers) ? bindingIndex + 2 : bindingIndex,
+                                       (useModifiers) ? bindingIndex : -1,
+                                       (useModifiers) ? bindingIndex + 1 : -1,
+                                       (useModifiers) ? bindingIndexAlt + 2 : bindingIndexAlt, 
+                                       (useModifiers) ? bindingIndexAlt : -1, 
+                                       (useModifiers) ? bindingIndexAlt + 1 : -1);
+                inputBinding.SetDisabled(isDisabled);
+            }
+        }
+
         #endregion
-
-        #region Content Blocks
-
-        /// <summary>
-        /// Build the Horizontal Content Block.
-        /// </summary>
-        /// <param name="parent">The parent under which to instantiate the property.</param>
-        /// <param name="isDisabled">Show/Hide the content block at init..</param>
-        /// <returns></returns>
-        public IPContentBlock CreateContentBlockHorizontal(Transform parent, bool isDisabled = false)
-        {
-            IPContentBlock contentBlock = contentBlockHorizontalPool.Get(parent);
-            contentBlock.SetDisabled(isDisabled);
-            return contentBlock;
-        }
-        
-        /// <summary>
-        /// Build the Vertical Content Block.
-        /// </summary>
-        /// <param name="parent">The parent under which to instantiate the property.</param>
-        /// <param name="isDisabled">Show/Hide the content block at init..</param>
-        /// <returns></returns>
-        public IPContentBlock CreateContentBlockVertical(Transform parent, bool isDisabled = false)
-        {
-            IPContentBlock contentBlock = contentBlockVerticalPool.Get(parent);
-            contentBlock.SetDisabled(isDisabled);
-            return contentBlock;
-        }
-        
-        /// <summary>
-        /// Build the 2 Column Content Block.
-        /// </summary>
-        /// <param name="parent">The parent under which to instantiate the property.</param>
-        /// <param name="isDisabled">Show/Hide the content block at init..</param>
-        /// <returns></returns>
-        public IPContentBlock CreateContentBlockColumn2(Transform parent, bool isDisabled = false)
-        {
-            IPContentBlock contentBlock = contentBlockColumn2Pool.Get(parent);
-            contentBlock.SetDisabled(isDisabled);
-            return contentBlock;
-        }
-
-        #endregion
-        
-        [Serializable]
-        public struct ContentBlockInfo
-        {
-            public IPContentBlock vertical;
-            public IPContentBlock horizontal;
-            public IPContentBlock column2;
-        }
-
-        [Serializable]
-        public struct VerticalVariantsInfo
-        {
-            public IPInputField inputFieldProperty;
-            public IPDropdown dropdownProperty;
-            public IPPlainText plainTextProperty;
-        }
     }
 }

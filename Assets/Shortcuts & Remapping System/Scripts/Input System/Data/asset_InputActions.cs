@@ -646,7 +646,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": ""<Keyboard>/leftCtrl"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -657,7 +657,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -668,7 +668,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": ""<Keyboard>/b"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -690,7 +690,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -701,7 +701,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -712,7 +712,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -734,7 +734,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -745,7 +745,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -756,7 +756,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -778,7 +778,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -789,7 +789,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -800,7 +800,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeBackground"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -822,7 +822,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": ""<Keyboard>/leftCtrl"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -833,7 +833,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": ""<Keyboard>/leftShift"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -844,7 +844,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -866,7 +866,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -877,7 +877,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -888,7 +888,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -910,7 +910,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -921,7 +921,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -932,7 +932,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -954,7 +954,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -965,7 +965,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -976,7 +976,7 @@ namespace RedRats.ShortcutSystem.Input
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true

@@ -9,10 +9,9 @@ namespace RedRats.Example.Core
     {
         [SerializeField] private RectTransform propertiesContent;
 
-        private async void Start()
+        private void Start()
         {
             PropertyColumnBuilder b = new(propertiesContent);
-            await Awaitable.NextFrameAsync();
             b.Build();       
         }
     }

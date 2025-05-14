@@ -1,3 +1,4 @@
+using RedRats.ShortcutSystem.Input;
 using RedRats.UI.Properties;
 using UnityEngine;
 
@@ -16,9 +17,8 @@ namespace RedRats.Example.Core
         public void Build()
         {
             parent.ReleaseAllProperties();
-            b.BuildDropdown("Border", new[] { "Basic", "Fancy", "None" }, 0, parent, GeneralActions.Instance.ChangeBorder);
-            b.BuildSlider("Color", 0, 365, 128, parent, v => GeneralActions.Instance.ChangeGridColor((int)v));
-            b.BuildToggle("Visibility", true, parent, GeneralActions.Instance.ToggleGridVisibility);
+            b.BuildInputBinding(InputSystem.Instance.Shortcuts.ChangeBackground.Action, InputDeviceType.Keyboard, parent);
+            b.BuildInputBinding(InputSystem.Instance.Shortcuts.ChangeColor.Action, InputDeviceType.Keyboard, parent);
         }
     }
 }
