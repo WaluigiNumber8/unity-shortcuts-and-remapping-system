@@ -1186,6 +1186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowPrefab: {fileID: 1053597741724360686, guid: 4ed7771a46fa79d47b6ad8147723fe9b, type: 3}
+  poolParent: {fileID: 683320240}
 --- !u!114 &830128533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1199,7 +1200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowGenerator: {fileID: 830128532}
-  windowParent: {fileID: 683320240}
 --- !u!1 &963950759
 GameObject:
   m_ObjectHideFlags: 0

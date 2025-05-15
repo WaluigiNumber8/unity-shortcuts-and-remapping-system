@@ -11,6 +11,7 @@ namespace RedRats.UI.ModalWindows
     public class ModalWindowGenerator : MonoBehaviour
     {
         [SerializeField] private ModalWindow windowPrefab;
+        [SerializeField] private RectTransform poolParent;
 
         private Dictionary<string, ModalWindow> identifiedWindows;
         private ObjectPool<ModalWindow> windowPool;
@@ -21,7 +22,7 @@ namespace RedRats.UI.ModalWindows
             windowPool = new ObjectPool<ModalWindow>(
                 () =>
                 {
-                    ModalWindow window = Instantiate(windowPrefab, transform);
+                    ModalWindow window = Instantiate(windowPrefab, poolParent);
                     window.OnClose += () =>
                     {
                         if (identifiedWindows.ContainsValue(window)) return;

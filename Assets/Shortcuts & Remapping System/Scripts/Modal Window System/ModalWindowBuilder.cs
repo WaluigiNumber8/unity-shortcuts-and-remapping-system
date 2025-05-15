@@ -8,9 +8,7 @@ namespace RedRats.UI.ModalWindows
     /// </summary>
     public class ModalWindowBuilder : MonoSingleton<ModalWindowBuilder>
     {
-        [Header("Settings")] 
         [SerializeField] private ModalWindowGenerator windowGenerator;
-        [SerializeField] private Transform windowParent;
         
         /// <summary>
         /// Opens a new generic modal window.
