@@ -16,9 +16,12 @@ namespace RedRats.Example.Core
         
         public void Build()
         {
+            InputSystem input = InputSystem.Instance;
+            
             parent.ReleaseAllProperties();
-            b.BuildInputBinding(InputSystem.Instance.Shortcuts.ChangeBackground.Action, InputDeviceType.Keyboard, parent);
-            b.BuildInputBinding(InputSystem.Instance.Shortcuts.ChangeColor.Action, InputDeviceType.Keyboard, parent);
+            b.BuildInputBinding(input.Shortcuts.ChangeBackground.Action, InputDeviceType.Keyboard, parent);
+            b.BuildInputBinding(input.Shortcuts.ChangeColor.Action, InputDeviceType.Keyboard, parent);
+            b.BuildInputBinding(input.Shortcuts.BurstParticle.Action, InputDeviceType.Keyboard, parent);
         }
     }
 }

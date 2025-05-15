@@ -626,6 +626,15 @@ namespace RedRats.ShortcutSystem.Input
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""BurstParticle"",
+                    ""type"": ""Button"",
+                    ""id"": ""4617d336-b871-4443-adff-6f0a04530a04"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -841,7 +850,7 @@ namespace RedRats.ShortcutSystem.Input
                 {
                     ""name"": ""button"",
                     ""id"": ""fb488c8e-890f-4dea-a71a-bcd84c7a656b"",
-                    ""path"": ""<Keyboard>/c"",
+                    ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
@@ -980,6 +989,182 @@ namespace RedRats.ShortcutSystem.Input
                     ""action"": ""ChangeColor"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Keyboard1"",
+                    ""id"": ""15a52b62-2d7a-43b1-8ae6-f69037c2e3e4"",
+                    ""path"": ""TwoOptionalModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""b843dd25-29d1-4b27-af57-5b7a3395831c"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""8bea64db-bc5d-458a-8065-d47791ff665b"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""button"",
+                    ""id"": ""dd3bb43f-7094-4de6-91db-59503ba4da28"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Keyboard2"",
+                    ""id"": ""43a7d0f1-734f-4e57-b3e8-45da93e68e5a"",
+                    ""path"": ""TwoOptionalModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""589e78c0-a72f-4698-bd70-2e7efe8d557b"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""b4e18ebd-b48b-4619-b40a-7b2e666d5599"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""button"",
+                    ""id"": ""2c1a1fb7-b926-4104-8af8-f7bd49785eb6"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Gamepad1"",
+                    ""id"": ""19ab581b-4896-47e5-a16a-946397599a82"",
+                    ""path"": ""TwoOptionalModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""9870150c-cc75-4058-8371-a6378c25dc81"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""9f8388c3-26d1-48e3-a918-af0bc31b0f01"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""button"",
+                    ""id"": ""e0b65821-c591-426e-9c05-51a145ea9442"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Gamepad2"",
+                    ""id"": ""324e88c0-edc2-4274-843f-ecf1c237b0e7"",
+                    ""path"": ""TwoOptionalModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""a5064c5a-ceff-46d7-85bc-842c5e7406e3"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""e5389869-2ed1-4d6b-a6b6-1e0b1f5479aa"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""button"",
+                    ""id"": ""110bc53d-9138-4d84-b139-15c82c83a3e5"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""BurstParticle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -1063,6 +1248,7 @@ namespace RedRats.ShortcutSystem.Input
             m_Shortcuts = asset.FindActionMap("Shortcuts", throwIfNotFound: true);
             m_Shortcuts_ChangeBackground = m_Shortcuts.FindAction("ChangeBackground", throwIfNotFound: true);
             m_Shortcuts_ChangeColor = m_Shortcuts.FindAction("ChangeColor", throwIfNotFound: true);
+            m_Shortcuts_BurstParticle = m_Shortcuts.FindAction("BurstParticle", throwIfNotFound: true);
         }
 
         ~@TestInputActions()
@@ -1341,6 +1527,7 @@ namespace RedRats.ShortcutSystem.Input
         private List<IShortcutsActions> m_ShortcutsActionsCallbackInterfaces = new List<IShortcutsActions>();
         private readonly InputAction m_Shortcuts_ChangeBackground;
         private readonly InputAction m_Shortcuts_ChangeColor;
+        private readonly InputAction m_Shortcuts_BurstParticle;
         /// <summary>
         /// Provides access to input actions defined in input action map "Shortcuts".
         /// </summary>
@@ -1360,6 +1547,10 @@ namespace RedRats.ShortcutSystem.Input
             /// Provides access to the underlying input action "Shortcuts/ChangeColor".
             /// </summary>
             public InputAction @ChangeColor => m_Wrapper.m_Shortcuts_ChangeColor;
+            /// <summary>
+            /// Provides access to the underlying input action "Shortcuts/BurstParticle".
+            /// </summary>
+            public InputAction @BurstParticle => m_Wrapper.m_Shortcuts_BurstParticle;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -1392,6 +1583,9 @@ namespace RedRats.ShortcutSystem.Input
                 @ChangeColor.started += instance.OnChangeColor;
                 @ChangeColor.performed += instance.OnChangeColor;
                 @ChangeColor.canceled += instance.OnChangeColor;
+                @BurstParticle.started += instance.OnBurstParticle;
+                @BurstParticle.performed += instance.OnBurstParticle;
+                @BurstParticle.canceled += instance.OnBurstParticle;
             }
 
             /// <summary>
@@ -1409,6 +1603,9 @@ namespace RedRats.ShortcutSystem.Input
                 @ChangeColor.started -= instance.OnChangeColor;
                 @ChangeColor.performed -= instance.OnChangeColor;
                 @ChangeColor.canceled -= instance.OnChangeColor;
+                @BurstParticle.started -= instance.OnBurstParticle;
+                @BurstParticle.performed -= instance.OnBurstParticle;
+                @BurstParticle.canceled -= instance.OnBurstParticle;
             }
 
             /// <summary>
@@ -1606,6 +1803,13 @@ namespace RedRats.ShortcutSystem.Input
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnChangeColor(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "BurstParticle" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnBurstParticle(InputAction.CallbackContext context);
         }
     }
 }

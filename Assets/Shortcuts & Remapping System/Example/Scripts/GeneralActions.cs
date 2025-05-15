@@ -1,5 +1,4 @@
-﻿using RedRats.ActionHistory;
-using RedRats.Core;
+﻿using RedRats.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,35 +9,38 @@ namespace RedRats.Example.Core
     /// </summary>
     public class GeneralActions : MonoSingleton<GeneralActions>
     {
-        [SerializeField] private UIGridRenderer uiGridRenderer;
-        [SerializeField] private Image gridBorderImage;
+        [SerializeField] private ParticleSystem affectedParticle;
+        [SerializeField] private ParticleSystem burstParticle;
+        [SerializeField] private Image background;
         [Space] 
-        [SerializeField] private Sprite borderSprite1;
-        [SerializeField] private Sprite borderSprite2;
+        [SerializeField] private Color[] backgroundColors;
+        [SerializeField] private Color[] particleColors;
+        
+        private int currentBackgroundColorIndex = 0;
+        private int currentParticleColorIndex = 0;
 
-
-        public void ChangeGridColor(int value)
+        public void ChangeBackground()
         {
-            uiGridRenderer.color = Color.HSVToRGB(value / 360f, 0.25f, 0.56f);
+            currentBackgroundColorIndex++;
+            currentBackgroundColorIndex %= backgroundColors.Length;
+            Color newColor = backgroundColors[currentBackgroundColorIndex];
+            background.color = newColor;
+        } 
+
+        public void ChangeParticleColor()
+        {
+            currentParticleColorIndex++;
+            currentParticleColorIndex %= particleColors.Length;
+            Color newColor = particleColors[currentParticleColorIndex];
+            ParticleSystem.MainModule main = affectedParticle.main;
+            main.startColor = newColor;
+            ParticleSystem.MainModule burstMain = burstParticle.main;
+            burstMain.startColor = newColor;
         }
         
-        public void ToggleGridVisibility(bool value)
+        public void TriggerBurst()
         {
-            uiGridRenderer.gameObject.SetActive(value);
+            burstParticle.Play();
         }
-
-        public void ChangeBorder(int value)
-        {
-            Sprite borderSprite = value switch
-            {
-                0 => borderSprite1,
-                1 => borderSprite2,
-                _ => new SpriteBuilder().WithSingleColorTexture(Color.clear, 1, 1).Build()
-            };
-            gridBorderImage.sprite = borderSprite;
-        }
-        
-        public void Undo() => ActionHistorySystem.Undo();
-        public void Redo() => ActionHistorySystem.Redo();
     }
 }
