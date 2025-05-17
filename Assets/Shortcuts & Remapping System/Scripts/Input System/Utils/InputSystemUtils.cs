@@ -2,6 +2,7 @@
 using System.Text;
 using System.Text.RegularExpressions;
 using Rogium.Systems.Shortcuts;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 

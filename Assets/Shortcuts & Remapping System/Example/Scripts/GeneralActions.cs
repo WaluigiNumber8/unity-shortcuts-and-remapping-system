@@ -1,6 +1,8 @@
 ﻿using RedRats.Core;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using InputSystem = RedRats.ShortcutSystem.Input.InputSystem;
 
 namespace RedRats.Example.Core
 {
@@ -19,6 +21,9 @@ namespace RedRats.Example.Core
         private int currentBackgroundColorIndex = 0;
         private int currentParticleColorIndex = 0;
 
+        public void SaveChanges() => InputBindingEditor.Instance.SaveChanges();
+        public void StartEditing() => InputBindingEditor.Instance.StartEditing();
+
         public void ChangeBackground()
         {
             currentBackgroundColorIndex++;
@@ -26,6 +31,16 @@ namespace RedRats.Example.Core
             Color newColor = backgroundColors[currentBackgroundColorIndex];
             background.color = newColor;
         } 
+        
+        public void Test()
+        {
+            foreach (InputBinding b in InputSystem.Instance.Shortcuts.BurstParticle.Action.bindings)
+            {
+                string path = b.effectivePath;
+                if (string.IsNullOrEmpty(path)) continue;
+                Debug.Log($"{path}");
+            }
+        }
 
         public void ChangeParticleColor()
         {

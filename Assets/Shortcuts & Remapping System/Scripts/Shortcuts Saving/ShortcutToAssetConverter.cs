@@ -29,6 +29,10 @@ namespace RedRats.ShortcutSystem.Saving
             keyboardAlt.ChangeColor = GetPath(input.Shortcuts.ChangeColor.Action, InputDeviceType.Keyboard, true);
             gamepad.ChangeColor = GetPath(input.Shortcuts.ChangeColor.Action, InputDeviceType.Gamepad);
             gamepadAlt.ChangeColor = GetPath(input.Shortcuts.ChangeColor.Action, InputDeviceType.Gamepad, true);
+            keyboard.BurstParticle = GetPath(input.Shortcuts.BurstParticle.Action, InputDeviceType.Keyboard);
+            keyboardAlt.BurstParticle = GetPath(input.Shortcuts.BurstParticle.Action, InputDeviceType.Keyboard, true);
+            gamepad.BurstParticle = GetPath(input.Shortcuts.BurstParticle.Action, InputDeviceType.Gamepad);
+            gamepadAlt.BurstParticle = GetPath(input.Shortcuts.BurstParticle.Action, InputDeviceType.Gamepad, true);
             
             return new ShortcutBindingsAsset.Builder()
                 .WithKeyboard(keyboard)
@@ -55,6 +59,10 @@ namespace RedRats.ShortcutSystem.Saving
             ApplyBindingOverride(asset.KeyboardAlt.ChangeColor, input.Shortcuts.ChangeColor.Action, InputDeviceType.Keyboard, true);
             ApplyBindingOverride(asset.Gamepad.ChangeColor, input.Shortcuts.ChangeColor.Action, InputDeviceType.Gamepad);
             ApplyBindingOverride(asset.GamepadAlt.ChangeColor, input.Shortcuts.ChangeColor.Action, InputDeviceType.Gamepad, true);
+            ApplyBindingOverride(asset.Keyboard.BurstParticle, input.Shortcuts.BurstParticle.Action, InputDeviceType.Keyboard);
+            ApplyBindingOverride(asset.KeyboardAlt.BurstParticle, input.Shortcuts.BurstParticle.Action, InputDeviceType.Keyboard, true);
+            ApplyBindingOverride(asset.Gamepad.BurstParticle, input.Shortcuts.BurstParticle.Action, InputDeviceType.Gamepad);
+            ApplyBindingOverride(asset.GamepadAlt.BurstParticle, input.Shortcuts.BurstParticle.Action, InputDeviceType.Gamepad, true);
         }
     }
 }

@@ -7,8 +7,10 @@ namespace RedRats.Example.Core
     public class PropertyColumnBuilder
     {
         private readonly UIPropertyBuilder b = UIPropertyBuilder.Instance;
-        private readonly Transform parent;
+        private readonly InputSystem input = InputSystem.Instance;
         
+        private readonly Transform parent;
+
         public PropertyColumnBuilder(Transform parent)
         {
             this.parent = parent;
@@ -16,8 +18,6 @@ namespace RedRats.Example.Core
         
         public void Build()
         {
-            InputSystem input = InputSystem.Instance;
-            
             parent.ReleaseAllProperties();
             b.BuildInputBinding(input.Shortcuts.ChangeBackground.Action, InputDeviceType.Keyboard, parent);
             b.BuildInputBinding(input.Shortcuts.ChangeColor.Action, InputDeviceType.Keyboard, parent);

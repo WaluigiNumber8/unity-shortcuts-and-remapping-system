@@ -33,10 +33,9 @@
         {
             changeBackground.Disable();
             changeColor.Disable();
+            burstParticle.Disable();
             
             generalMap.Disable();
-            generalMap.Disable();
-            burstParticle.Disable();
         }
 
         public override bool IsMapEnabled { get => generalMap.enabled; }
