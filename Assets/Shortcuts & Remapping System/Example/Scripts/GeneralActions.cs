@@ -32,16 +32,6 @@ namespace RedRats.Example.Core
             background.color = newColor;
         } 
         
-        public void Test()
-        {
-            foreach (InputBinding b in InputSystem.Instance.Shortcuts.BurstParticle.Action.bindings)
-            {
-                string path = b.effectivePath;
-                if (string.IsNullOrEmpty(path)) continue;
-                Debug.Log($"{path}");
-            }
-        }
-
         public void ChangeParticleColor()
         {
             currentParticleColorIndex++;

@@ -109,14 +109,17 @@ namespace RedRats.ShortcutSystem.Input
                 switch (paths.Length)
                 {
                     case 1:
+                        ApplyBinding(index + 0, "");
+                        ApplyBinding(index + 1, "");
                         ApplyBinding(index + 2, paths[0]);
                         return;
                     case 2:
-                        ApplyBinding(index, paths[0]);
+                        ApplyBinding(index + 0, paths[0]);
+                        ApplyBinding(index + 1, "");
                         ApplyBinding(index + 2, paths[1]);
                         return;
                     case 3:
-                        ApplyBinding(index, paths[0]);
+                        ApplyBinding(index + 0, paths[0]);
                         ApplyBinding(index + 1, paths[1]);
                         ApplyBinding(index + 2, paths[2]);
                         return;
