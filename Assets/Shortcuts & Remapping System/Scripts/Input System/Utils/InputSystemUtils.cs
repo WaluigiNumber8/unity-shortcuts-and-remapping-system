@@ -4,6 +4,7 @@ using System.Text.RegularExpressions;
 using Rogium.Systems.Shortcuts;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Composites;
 using UnityEngine.InputSystem.Utilities;
 
 namespace RedRats.ShortcutSystem.Input
@@ -79,7 +80,7 @@ namespace RedRats.ShortcutSystem.Input
         public static string GetPath(InputAction action, InputDeviceType device, bool useAlt = false, int indexOverride = -1)
         {
             int index = (indexOverride > -1) ? indexOverride : GetBindingIndexByDevice(action, device, useAlt);
-            if (PreviousIsOptionalModifiersComposite(action, index))
+            if (PreviousIsOptionalModifiersComposite(action, index) || PreviousIsTwoModifierComposite(action, index))
             {
                 StringBuilder path = new();
                 path.Append(action.bindings[index].GetPathWithoutDevice(device));           //Modifier 1
@@ -87,6 +88,14 @@ namespace RedRats.ShortcutSystem.Input
                 path.Append(action.bindings[index + 1].GetPathWithoutDevice(device));       //Modifier 2
                 path.Append((action.bindings[index + 1].effectivePath == "") ? "" : "+");   //Plus
                 path.Append(action.bindings[index + 2].GetPathWithoutDevice(device));       //Button
+                return path.ToString();
+            }
+            if (PreviousIsOneModifierComposite(action, index))
+            {
+                StringBuilder path = new();
+                path.Append(action.bindings[index].GetPathWithoutDevice(device));           //Modifier
+                path.Append((action.bindings[index].effectivePath == "") ? "" : "+");       //Plus
+                path.Append(action.bindings[index + 1].GetPathWithoutDevice(device));       //Button
                 return path.ToString();
             }
             return action.bindings[index].GetPathWithoutDevice(device);
@@ -193,6 +202,30 @@ namespace RedRats.ShortcutSystem.Input
                 InputBinding binding = action.bindings[currentIndex];
                 if (!binding.isPartOfComposite && !binding.isComposite) return false;
                 if (binding.isComposite) return binding.IsTwoOptionalModifiersComposite();
+                currentIndex--;
+            }
+        }
+
+        public static bool PreviousIsOneModifierComposite(InputAction action, int index)
+        {
+            int currentIndex = index;
+            while (true)
+            {
+                InputBinding binding = action.bindings[currentIndex];
+                if (!binding.isPartOfComposite && !binding.isComposite) return false;
+                if (binding.isComposite) return binding.path == nameof(OneModifierComposite).Replace("Composite", "");
+                currentIndex--;
+            }
+        }
+
+        public static bool PreviousIsTwoModifierComposite(InputAction action, int index)
+        {
+            int currentIndex = index;
+            while (true)
+            {
+                InputBinding binding = action.bindings[currentIndex];
+                if (!binding.isPartOfComposite && !binding.isComposite) return false;
+                if (binding.isComposite) return binding.path == nameof(TwoModifiersComposite).Replace("Composite", "");
                 currentIndex--;
             }
         }
