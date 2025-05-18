@@ -728,7 +728,7 @@ namespace RedRats.ShortcutSystem.Input
                 },
                 {
                     ""name"": ""Gamepad1"",
-                    ""id"": ""c1299556-151d-4c4b-849a-e4c27f715745"",
+                    ""id"": ""57a526c6-7a5d-436e-b866-5106a4712cf9"",
                     ""path"": ""TwoOptionalModifiers"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -739,7 +739,7 @@ namespace RedRats.ShortcutSystem.Input
                 },
                 {
                     ""name"": ""modifier1"",
-                    ""id"": ""36ff5bd2-c030-42fb-b984-2013d5786a38"",
+                    ""id"": ""85f10da8-fd4e-4263-ba4a-490a3af89a36"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
@@ -750,7 +750,7 @@ namespace RedRats.ShortcutSystem.Input
                 },
                 {
                     ""name"": ""modifier2"",
-                    ""id"": ""a4e5f710-21f2-4280-ba2f-8504fd69b186"",
+                    ""id"": ""1ffda25e-4ba3-459d-af33-753a6fc38996"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
@@ -761,7 +761,7 @@ namespace RedRats.ShortcutSystem.Input
                 },
                 {
                     ""name"": ""button"",
-                    ""id"": ""49f39a5d-6bc9-46b2-bae0-537123f87739"",
+                    ""id"": ""033944e9-029a-46d7-bedb-3fb151db1e09"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
@@ -772,7 +772,7 @@ namespace RedRats.ShortcutSystem.Input
                 },
                 {
                     ""name"": ""Gamepad2"",
-                    ""id"": ""dd502731-71dc-4614-b8dc-6e5699cdfc91"",
+                    ""id"": ""17471eed-9fcb-4bd9-9cad-4c3c3196f9d8"",
                     ""path"": ""TwoOptionalModifiers"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -783,7 +783,7 @@ namespace RedRats.ShortcutSystem.Input
                 },
                 {
                     ""name"": ""modifier1"",
-                    ""id"": ""75f0a7b2-2b88-4bb9-87e3-b21ef8919d1e"",
+                    ""id"": ""02f80cce-8e09-44e1-b75a-99069c7fc1d3"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
@@ -794,7 +794,7 @@ namespace RedRats.ShortcutSystem.Input
                 },
                 {
                     ""name"": ""modifier2"",
-                    ""id"": ""51bfe54a-6c0a-44a9-96fe-cb89d778b85d"",
+                    ""id"": ""dc02dfe2-5301-49af-a4cf-dcb8d4a8e714"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
@@ -805,7 +805,7 @@ namespace RedRats.ShortcutSystem.Input
                 },
                 {
                     ""name"": ""button"",
-                    ""id"": ""13f984e6-e613-434b-81aa-fec3bed71859"",
+                    ""id"": ""8784f9a5-7d4c-4111-8fca-1111a1211a4e"",
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
