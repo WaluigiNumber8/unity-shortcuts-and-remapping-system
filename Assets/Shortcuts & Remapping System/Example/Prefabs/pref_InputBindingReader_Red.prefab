@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 6802556888710513019}
   - component: {fileID: 2238832602916666095}
   m_Layer: 5
-  m_Name: pref_InputBindingReader_Blue
+  m_Name: pref_InputBindingReader_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -599,7 +599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2106381050452406257, guid: 4db80c77cefd72342954a136ff27edb6, type: 3}
+  m_Sprite: {fileID: 401492236, guid: 34a69be70a980e44583bbad73127c022, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
