@@ -124,7 +124,7 @@ By default, the file is saved in the **persistent data path** of the application
 # System in detail
 To understand the inner workings of the system in more detail, you can look in the attached thesis. (Unfortunately, it is only in Czech/Čeština).
 
-thesis_name_here
+[master_thesis(CZ)](Documentation_and_implementation_of_functions_that_improve_the_usability_of_the_software_Jan_Kunetka.pdf)
 
 # Credits
 Fonts used in the example:
