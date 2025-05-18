@@ -1,4 +1,4 @@
-
+# Shortcut System with Rebinding
 This is a free shortcut/hotkey linking and remapping system for Unity that allows:
 
 - Linking Input Event Actions to UnityEvents.
@@ -12,7 +12,7 @@ This is a free shortcut/hotkey linking and remapping system for Unity that allow
 Tested in Unity 6000.1.2f1. Requires usage of the New Input System.
 
 
-# Structure & Requirements
+## Structure & Requirements
 The package is split into 3 assembly definitions:
 
 ### **RedRats.Core**
@@ -28,7 +28,7 @@ The package is split into 3 assembly definitions:
 - Requires **Unity.InputSystem**, **TextMeshPro**, **RedRats.Core** and **RedRats.ShortcutSystem** as a reference.
 
 
-# Prepare Input Actions 
+## Prepare Input Actions 
 ![PreparingInputAction](Images/InpuActionPreparation.jpg)
 To allow an Input Action to have a binding, which can be remapped to any number of buttons (max 3 in combination), follow:
 
@@ -40,7 +40,7 @@ To allow an Input Action to have a binding, which can be remapped to any number 
 To have an empty binding in the editor, press the **T** button next to the path field and empty the path's text.
 
 
-# Project Setup
+## Project Setup
 To make use of the property that allows remapping of combinations, the `InputBindingReader`, some setup is required:
 
 #### Prefabs
@@ -79,12 +79,12 @@ When the user types an already existing binding, the system shows a modal window
 2. Add components `ModalWindowBuilder` and `ModalWindowGenerator` to your scene and assign their fields.
 
 
-# Spawn InputBindingReader
+## Spawn InputBindingReader
 After the setup, to use the InputBindingReader UI property in your project, you have to spawn it at runtime through code via the method `UIPropertyBuilder.Instance.BuildInputBinding()`.
 Set its values like where in the hierarchy will it spawn, which action it affects, for which device and if it will allow to remap both the main and alternative binding.
 
 
-# Linking Input Actions to events
+## Linking Input Actions to events
 To link Input Actions to your Unity events, follow these steps:
 
 1. Add the component `ShortcutProfile` to your menu. It contains links between Input Actions and events. These links are only active when GameObject is.
@@ -93,12 +93,12 @@ To link Input Actions to your Unity events, follow these steps:
 This system is completely separate from the remapping system and should work even without the project setup.
 
 
-# How to Save/Load
+## How to Save/Load
 To save and load your remapped bindings to an external file you must call methods `ExternalStorageOverseer.Instance.Save()` and `ExternalStorageOverseer.Instance.Load()`. The built-in file system will handle the rest.
 
 By default, the file is saved in the **persistent data path** of the application (_AppData/LocalLow/COMPANY/PROJECT_NAME_). To change this, go to ExternalStorageOverseer and edit the `SaveableData` parameters in the code snippet: `shortcutBindingsCRUD.RefreshSaveableData(new SaveableData("", "01"));` Giving a name to param1 will put the file into a folder in the persistent path and changing param3 will change the path completely.
 
-# System Overview
+## System Overview
 ![Undo/Redo class diagram](Images/Shortcut_rebinding_system_class_diagram.jpg)
 - **InputBindingReader** - Represents a single reader that will remap a single binding. Contains methods for starting rebinding and finish rebinding.
 - **IPInputBinding** - Represents the whole UI element of a binding rebinder. Is made up of thE Input Action's title and max of 2 rebinding buttons for the main & alt bindings.
@@ -113,7 +113,7 @@ By default, the file is saved in the **persistent data path** of the application
 - **ShortcutBindingsAsset** - Contains ShortcutBindingData x 4. One for each device and for main and alt bindings. Is used to keep this data persistent while replacing TwoOptionalModifiersComposites with built-in ones. Also is used when saving/loading remappings to a file.
 - **ExternalStorageOverseer** - Main interaction between other systems and the FileSystem. Use it to save/load your remapped bindings.
 
-# Key Methods
+## Key Methods
 - InputBindingReader.StartRebinding() - Starts the rebinding process. Call this when the user clicks on the rebinding button.
 - UIPropertyBuilder.Instance.BuildInputBinding() - Spawns the InputBindingReader prefab with proper settings. Call this when you want to spawn a rebinding button into the hierarchy.
 - InputSystem.Instance.ReplaceAllBindings() - Replaces all TwoOptionalModifiersComposite bindings with built-in composites. Call this when the user is done remapping.
@@ -121,12 +121,12 @@ By default, the file is saved in the **persistent data path** of the application
 - ExternalStorageOverseer.Instance.Save() - Saves the remapped bindings to a file.
 - ExternalStorageOverseer.Instance.Load() - Loads the remapped bindings from a file.
 
-# System in detail
+## System in detail
 To understand the inner workings of the system in more detail, you can look in the attached thesis. (Unfortunately, it is only in Czech/Čeština).
 
 [master_thesis(CZ)](Documentation_and_implementation_of_functions_that_improve_the_usability_of_the_software_Jan_Kunetka.pdf)
 
-# Credits
+## Credits
 Fonts used in the example:
 
 - Perfect DOS VGA 437 by Zeh Fernando
