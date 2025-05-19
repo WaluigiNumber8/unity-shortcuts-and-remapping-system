@@ -6215,7 +6215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a2602079154ab0b604b39562c2422f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputAction: {fileID: -5096387604524674472, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  inputAction: {fileID: -5096387604524674472, guid: 7b7bdf2831ed7214b8d3fe386fc22dcb, type: 3}
   device: 0
   forAlt: 0
 --- !u!222 &644767575
@@ -6924,7 +6924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a2602079154ab0b604b39562c2422f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputAction: {fileID: 7814375162214509841, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  inputAction: {fileID: 7814375162214509841, guid: 7b7bdf2831ed7214b8d3fe386fc22dcb, type: 3}
   device: 0
   forAlt: 0
 --- !u!222 &1017821428
@@ -7359,7 +7359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a2602079154ab0b604b39562c2422f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputAction: {fileID: -6642688961532041689, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  inputAction: {fileID: -6642688961532041689, guid: 7b7bdf2831ed7214b8d3fe386fc22dcb, type: 3}
   device: 0
   forAlt: 0
 --- !u!222 &1175484708
