@@ -1,8 +1,8 @@
-﻿using RedRats.ShortcutSystem.Input;
+﻿using RedRats.Input;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using InputSystem = RedRats.ShortcutSystem.Input.InputSystem;
+using InputSystem = RedRats.Input.InputSystem;
 
 namespace RedRats.Example.Core
 {

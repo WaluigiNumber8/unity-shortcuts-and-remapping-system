@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using RedRats.Core;
 using RedRats.FileSystem;
-using RedRats.ShortcutSystem.Input;
+using RedRats.Input;
 using RedRats.ShortcutSystem.Saving;
 using UnityEngine;
 

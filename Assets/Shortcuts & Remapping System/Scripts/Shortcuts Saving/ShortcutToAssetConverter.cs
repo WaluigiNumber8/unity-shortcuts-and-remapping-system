@@ -1,6 +1,6 @@
 ﻿using RedRats.Core;
-using RedRats.ShortcutSystem.Input;
-using static RedRats.ShortcutSystem.Input.InputSystemUtils;
+using RedRats.Input;
+using static RedRats.Input.InputSystemUtils;
 
 namespace RedRats.ShortcutSystem.Saving
 {

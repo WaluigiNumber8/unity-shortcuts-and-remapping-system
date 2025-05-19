@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using RedRats.Core;
-using RedRats.ShortcutSystem.Input;
-using TMPro;
+﻿using RedRats.Core;
+using RedRats.Input;
 using UnityEngine;
 using UnityEngine.InputSystem;
 

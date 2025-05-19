@@ -2,7 +2,6 @@
 using RedRats.Core;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
-using InputSystem = RedRats.ShortcutSystem.Input.InputSystem;
 
 namespace RedRats.ShortcutSystem.Linking
 {
@@ -26,7 +25,7 @@ namespace RedRats.ShortcutSystem.Linking
         public void RefreshInput()
         {
             Preconditions.IsNotNull(trigger, "Trigger Action");
-            inputAction = InputSystem.Instance.GetAction(trigger);
+            inputAction = RedRats.Input.InputSystem.Instance.GetAction(trigger);
         }
 
         public void Link()

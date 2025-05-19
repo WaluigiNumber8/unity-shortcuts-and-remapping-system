@@ -1,4 +1,4 @@
-﻿namespace RedRats.ShortcutSystem.Input
+﻿namespace RedRats.Input
 {
     /// <summary>
     /// Fires events for the general shortcuts Action Map.

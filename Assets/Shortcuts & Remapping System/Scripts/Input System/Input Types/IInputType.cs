@@ -1,6 +1,6 @@
 ﻿using UnityEngine.InputSystem;
 
-namespace RedRats.ShortcutSystem.Input
+namespace RedRats.Input
 {
     public interface IInputType
     {

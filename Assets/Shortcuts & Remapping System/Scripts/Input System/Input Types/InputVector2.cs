@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace RedRats.ShortcutSystem.Input
+namespace RedRats.Input
 {
     /// <summary>
     /// Contains events for a vector2 type input.

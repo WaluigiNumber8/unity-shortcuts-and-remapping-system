@@ -2,12 +2,11 @@
 using System.Text;
 using System.Text.RegularExpressions;
 using Rogium.Systems.Shortcuts;
-using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Composites;
 using UnityEngine.InputSystem.Utilities;
 
-namespace RedRats.ShortcutSystem.Input
+namespace RedRats.Input
 {
     /// <summary>
     /// Utility functions for the input system.

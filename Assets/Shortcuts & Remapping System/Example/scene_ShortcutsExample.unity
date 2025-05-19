@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shortcuts:
-  - trigger: {fileID: -5096387604524674472, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - trigger: {fileID: -5096387604524674472, guid: 7b7bdf2831ed7214b8d3fe386fc22dcb, type: 3}
     action:
       m_PersistentCalls:
         m_Calls:
@@ -623,7 +623,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - trigger: {fileID: 7814375162214509841, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - trigger: {fileID: 7814375162214509841, guid: 7b7bdf2831ed7214b8d3fe386fc22dcb, type: 3}
     action:
       m_PersistentCalls:
         m_Calls:
@@ -639,7 +639,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - trigger: {fileID: -6642688961532041689, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - trigger: {fileID: -6642688961532041689, guid: 7b7bdf2831ed7214b8d3fe386fc22dcb, type: 3}
     action:
       m_PersistentCalls:
         m_Calls:
@@ -6072,11 +6072,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b6ed674144a2041b6efdacdfb82b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headerProperty: {fileID: 1790823658040992647, guid: 2be31aff2414ad14794aad9abd1051f2, type: 3}
-  inputFieldProperty: {fileID: 1940663414573648563, guid: 998370defd7fd65489477650a0c99913, type: 3}
-  dropdownProperty: {fileID: 5423482540537110212, guid: 9d181df27a66444438e6d75e327ed6c0, type: 3}
-  toggleProperty: {fileID: 9023567783155571448, guid: b8318842a87d0c1498e23f2f24188d18, type: 3}
-  sliderProperty: {fileID: 7627499707003046549, guid: d6f3bbd1e9c2f244a8c21f41bd059a63, type: 3}
   inputBindingProperty: {fileID: 7107962841123839837, guid: 36b8c10104961984c84d83da20f35c1f, type: 3}
   poolParent: {fileID: 0}
 --- !u!1 &644767571

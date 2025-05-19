@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.InputSystem;
 
-namespace RedRats.ShortcutSystem.Input
+namespace RedRats.Input
 {
     /// <summary>
     /// Contains events for a button.

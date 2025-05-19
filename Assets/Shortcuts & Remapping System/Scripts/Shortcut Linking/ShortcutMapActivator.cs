@@ -1,4 +1,4 @@
-﻿using RedRats.ShortcutSystem.Input;
+﻿using RedRats.Input;
 using UnityEngine;
 
 namespace RedRats.ShortcutSystem.Linking

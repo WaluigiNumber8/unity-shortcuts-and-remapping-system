@@ -1,4 +1,4 @@
-﻿namespace RedRats.ShortcutSystem.Input
+﻿namespace RedRats.Input
 {
     /// <summary>
     /// The different devices, that the <see cref="InputSystem"/> can read input from.

@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using UnityEngine;
 
-namespace RedRats.ShortcutSystem.Input
+namespace RedRats.Input
 {
     [CreateAssetMenu(fileName = "asset_LinkedActionMaps", menuName = "Linked Action Maps", order = 10)]
     public class LinkedActionMapsAsset : ScriptableObject

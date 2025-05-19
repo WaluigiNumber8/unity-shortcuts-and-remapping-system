@@ -1,4 +1,4 @@
-﻿namespace RedRats.ShortcutSystem.Input
+﻿namespace RedRats.Input
 {
     /// <summary>
     /// A base for all input profiles.

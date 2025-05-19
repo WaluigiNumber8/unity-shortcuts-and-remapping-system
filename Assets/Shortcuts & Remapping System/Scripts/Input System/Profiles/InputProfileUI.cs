@@ -1,4 +1,4 @@
-﻿namespace RedRats.ShortcutSystem.Input
+﻿namespace RedRats.Input
 {
     public class InputProfileUI : InputProfileBase
     {

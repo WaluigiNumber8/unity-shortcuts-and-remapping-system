@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-namespace RedRats.ShortcutSystem.Input
+namespace RedRats.Input
 {
     /// <summary>
     /// Overseers all input profiles and deals with their switching.

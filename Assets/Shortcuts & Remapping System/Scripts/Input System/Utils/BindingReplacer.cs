@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine.InputSystem;
 
-namespace RedRats.ShortcutSystem.Input
+namespace RedRats.Input
 {
     /// <summary>
     /// Replaces TwoOptionalModifierComposites with built-in modifiers.
