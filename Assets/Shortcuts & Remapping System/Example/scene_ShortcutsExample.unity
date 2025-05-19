@@ -6771,10 +6771,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 963950759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d73ec61a2e584e889625b1d02ff0ef77, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dcd66f041379b246abc956046e4a7f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefix: 
+  prefix: '@'
 --- !u!222 &963950763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7789,7 +7789,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1397996452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1851dfa2627469a9d61c19b850a2f04, type: 3}
+  m_Script: {fileID: 11500000, guid: f522dbfbe6ed21c4a94933d9462730af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!222 &1397996456
@@ -7810,7 +7810,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1417454941}
   - component: {fileID: 1417454944}
-  - component: {fileID: 1417454943}
   - component: {fileID: 1417454942}
   m_Layer: 5
   m_Name: 'Text '
@@ -7929,18 +7928,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1417454943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417454940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79cd04253e554882b7843347b0e6a748, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &1417454944
 CanvasRenderer:
   m_ObjectHideFlags: 0
