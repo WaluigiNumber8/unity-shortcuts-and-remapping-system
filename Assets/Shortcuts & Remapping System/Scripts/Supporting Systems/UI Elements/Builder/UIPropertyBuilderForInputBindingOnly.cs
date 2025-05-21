@@ -6,24 +6,13 @@ using UnityEngine.InputSystem;
 namespace RedRats.UI.Properties
 {
     /// <summary>
-    /// Builds Properties.
+    /// UIPropertyBuilder but contains code only for InputBindingReader and doesn't use pooling.
     /// </summary>
-    public class UIPropertyBuilder : MonoSingleton<UIPropertyBuilder>
+    public class UIPropertyBuilderForInputBindingOnly : MonoSingleton<UIPropertyBuilderForInputBindingOnly>
     {
         [Header("Property prefabs")] 
         [SerializeField] private IPInputBinding inputBindingProperty;
         
-        [Header("Other")] 
-        [SerializeField] private Transform poolParent;
-
-        private UIPropertyPool<IPInputBinding> inputBindingPool;
-        
-        protected override void Awake()
-        {
-            base.Awake();
-            inputBindingPool = new UIPropertyPool<IPInputBinding>(inputBindingProperty, poolParent, 50, 150);
-        }
-
         #region Properties
 
         /// <summary>
@@ -62,7 +51,7 @@ namespace RedRats.UI.Properties
             
             void ConstructInputBinding(string title, bool useModifiers = false)
             {
-                IPInputBinding inputBinding = inputBindingPool.Get(parent);
+                IPInputBinding inputBinding = Instantiate(inputBindingProperty, parent);
                 inputBinding.name = $"{title} InputBinding";
                 inputBinding.Construct(title, action, 
                                        (useModifiers) ? bindingIndex + 2 : bindingIndex,
