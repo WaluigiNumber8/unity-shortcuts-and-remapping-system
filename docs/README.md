@@ -137,4 +137,3 @@ Fonts used in the example:
 #### Undo/Redo
 - Besides this system I have also created an Undo/Redo system that supports Action Grouping.
 - Available on GitHub: [RedRats.UndoRedoSystem](https://github.com/WaluigiNumber8/unity-undo-redo-system)
-- **An unfortunate limitation is**, (due to lack of time) it cannot be imported into the same project as this one, unless you manually merge the functionality of this feature's InputSystem and UI Elements System with the other one.
