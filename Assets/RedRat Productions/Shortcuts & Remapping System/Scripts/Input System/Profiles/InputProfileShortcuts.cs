@@ -5,13 +5,13 @@
     /// </summary>
     public class InputProfileShortcuts : InputProfileBase
     {
-        private TestInputActions.ShortcutsActions generalMap;
+        private ShortcutTestInputActions.ShortcutsActions generalMap;
 
         private readonly InputButton changeBackground;
         private readonly InputButton changeColor;
         private readonly InputButton burstParticle;
 
-        public InputProfileShortcuts(TestInputActions input) : base(input)
+        public InputProfileShortcuts(ShortcutTestInputActions input) : base(input)
         {
             generalMap = input.Shortcuts;
             

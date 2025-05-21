@@ -9,5 +9,5 @@ EditorBuildSettings:
     path: Assets/Shortcuts & Remapping System/Example/scene_ShortcutsExample.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 7b7bdf2831ed7214b8d3fe386fc22dcb, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e3713adf9f7cd9f4bb5fd44706c74537, type: 3}
   m_UseUCBPForAssetBundles: 0

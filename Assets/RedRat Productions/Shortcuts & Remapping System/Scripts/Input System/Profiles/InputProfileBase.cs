@@ -5,9 +5,9 @@
     /// </summary>
     public abstract class InputProfileBase
     {
-        protected readonly TestInputActions input;
+        protected readonly ShortcutTestInputActions input;
         
-        protected InputProfileBase(TestInputActions input) => this.input = input;
+        protected InputProfileBase(ShortcutTestInputActions input) => this.input = input;
         
         /// <summary>
         /// Enables the profile.

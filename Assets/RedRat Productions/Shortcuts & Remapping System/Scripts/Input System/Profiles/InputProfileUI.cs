@@ -2,7 +2,7 @@
 {
     public class InputProfileUI : InputProfileBase
     {
-        private TestInputActions.UIActions map;
+        private ShortcutTestInputActions.UIActions map;
 
         private readonly InputVector2 navigate;
         private readonly InputVector2 pointerPosition;
@@ -11,7 +11,7 @@
         private readonly InputButton cancel;
         private readonly InputButton contextSelect;
 
-        public InputProfileUI(TestInputActions input) : base(input)
+        public InputProfileUI(ShortcutTestInputActions input) : base(input)
         {
             map = input.UI;
 

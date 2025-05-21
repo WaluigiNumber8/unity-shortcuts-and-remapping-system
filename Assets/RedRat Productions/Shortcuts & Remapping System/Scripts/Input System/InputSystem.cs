@@ -19,7 +19,7 @@ namespace RedRats.Input
         [SerializeField] private LinkedActionMapsAsset linkedActionMaps;
         
         private EventSystem eventSystem;
-        private TestInputActions input;
+        private ShortcutTestInputActions input;
         
         private InputProfileUI inputUI;
         private InputProfileShortcuts inputShortcuts;
@@ -38,7 +38,7 @@ namespace RedRats.Input
         {
             UI?.Disable();
             Shortcuts?.Disable();
-            input = new TestInputActions();
+            input = new ShortcutTestInputActions();
             inputUI = new InputProfileUI(input);
             inputShortcuts = new InputProfileShortcuts(input);
             UI!.Enable();
