@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using RedRats.ActionHistory;
 using RedRats.Core;
 using RedRats.ShortcutSystem.Remapping;
 using UnityEngine;
@@ -48,15 +47,15 @@ namespace RedRats.Input
             UI.PointerPosition.OnPressed += UpdatePointerPosition;
             
             //Force grouping on click/right click
-            UI.Select.OnPress -= ActionHistorySystem.StartNewGroup;
-            UI.ContextSelect.OnPress -= ActionHistorySystem.StartNewGroup;
-            UI.Select.OnRelease -= ActionHistorySystem.EndCurrentGroup;
-            UI.ContextSelect.OnRelease -= ActionHistorySystem.EndCurrentGroup;
-            
-            UI.Select.OnPress += ActionHistorySystem.StartNewGroup;
-            UI.ContextSelect.OnPress += ActionHistorySystem.StartNewGroup;
-            UI.Select.OnRelease += ActionHistorySystem.EndCurrentGroup;
-            UI.ContextSelect.OnRelease += ActionHistorySystem.EndCurrentGroup;
+            // UI.Select.OnPress -= ActionHistorySystem.StartNewGroup;
+            // UI.ContextSelect.OnPress -= ActionHistorySystem.StartNewGroup;
+            // UI.Select.OnRelease -= ActionHistorySystem.EndCurrentGroup;
+            // UI.ContextSelect.OnRelease -= ActionHistorySystem.EndCurrentGroup;
+            //
+            // UI.Select.OnPress += ActionHistorySystem.StartNewGroup;
+            // UI.ContextSelect.OnPress += ActionHistorySystem.StartNewGroup;
+            // UI.Select.OnRelease += ActionHistorySystem.EndCurrentGroup;
+            // UI.ContextSelect.OnRelease += ActionHistorySystem.EndCurrentGroup;
         }
 
         /// <summary>
